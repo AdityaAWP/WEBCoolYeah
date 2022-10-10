@@ -1,0 +1,226 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    /* background-color: #0d033c;
+    color: white; */
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+}
+
+/* Header */
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: white;
+    color: black;
+    z-index: 1;
+}
+.list-wrapper  {
+    display: flex;
+    list-style: none;
+}
+.list-wrapper li{
+    display: inline-block;
+}
+.logo{
+    flex: 1;
+}
+.list{
+    flex: 1;
+    text-align: end;
+    align-self: center;
+}
+.list li{
+    padding-right: 3%; 
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.list li a{
+    text-decoration: none;
+    color: black;
+}
+.list li input{
+    background-color: #4B33B8;
+    color: white;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow: 5px 5px black;
+}
+.list li input:hover{
+    box-shadow: none;
+}
+
+/* Welcome Page */
+.welcome-page{
+    padding-top: 275px;
+}
+.welcome-page .name{
+    font-size: 50px;
+    font-weight: 600;
+    margin: auto;
+    text-align: center;
+}
+
+/* About Page */
+.about-page{
+    background-color: #0c1b41;
+    color: white;
+    padding-top: 10%;
+    padding-left: 15%;
+    /* padding-bottom: 8%; */
+}
+
+.about-page .title-wrapper{
+    display: flex;
+}
+.about-page .title-wrapper::after{
+    content: "";
+    display: block;
+    width: 300px;
+    height: 2px;
+    margin-top: 30px;
+    margin-left: 10px;
+    background-color: #20314f;
+}
+.about-page .title{
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 40px;
+}
+.about-page .about-wrapper{
+    display: flex;
+    gap: 5%;
+}
+.about-page .about-description{
+    max-width: 600px;
+}
+.about-page .about-description p{
+    font-size: 18px;
+    font-weight: bold;
+    opacity: .7;    
+    line-height: 40px;
+    display: inline-block;
+    flex: 1;
+}
+.about-page .about-image{
+    flex: 1;
+    margin-top: 25px;
+}
+.about-page .about-image img{
+    border-radius: 10px;
+}
+.about-page .list-about{
+    display: flex;
+}
+.about-page .list-about ul{
+    list-style: circle;
+    font-weight: bold;
+    opacity: .7;
+}
+
+/* Experience Page */
+.experience-page{
+    background-color: #0c1b41;
+    color: white;
+    padding-top: 15%;
+    padding-left: 15%;
+    padding-bottom: 12%;
+}
+.experience-page .title span{
+    font-size: 40px;
+    font-weight: bold;
+}
+.experience-page .title{
+    display: flex;
+}
+.experience-page .title::after{
+    content: "";
+    display: block;
+    background-color: #20314f;
+    height: 2px;
+    width: 300px;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+.experience-page .experience-list ul{
+    display: flex;
+    list-style: none;
+    margin-left: -30px;
+    margin-top: 70px;
+    gap: 20%;
+    opacity: .7;
+}
+.experience-page .experience-list ul li .number{
+    font-size: 50px;
+}
+.experience-page .experience-list ul li p{
+    line-height: 15px;
+}
+
+/* Creations Page */
+.creation-page{
+    padding-bottom: 8%;
+}
+.creation-page .title{
+    padding-top: 8%;
+    text-align: center;
+    padding-bottom: 6%;
+}
+.creation-page .title p{
+    margin-top: 20px;
+    font-size: 20px;
+}
+.creation-page .title h1{
+    font-size: 30px;
+}
+.creation-page .project-list ul{
+    display: flex;
+    list-style: none;   
+    justify-content: space-around;
+}
+.creation-page .project-list ul{
+    flex-wrap: wrap;
+}
+.creation-page .project-list .project-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Social Media Page */
+.socmed{
+    text-align: center;
+    /* background-color: #FFFBFE; */
+    padding-top: 8%;
+    padding-bottom: 5%;
+}
+.socmed .socmed-title h1{
+    padding-bottom: 30px;
+    font-size: 40px;
+}
+.socmed .socmed-list h3{
+    margin-top: 70px;
+    margin-bottom: 80px;
+    font-size: 20px;
+}
+.socmed .socmed-list ul{
+    display: flex;
+    margin-left: -30px;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+/* Footer */
+.footer-wrapper{
+    text-align: center;
+    background-color: #44deba;
+    padding: 6px;
+}
+.footer-wrapper p{
+    font-size: 16px;
+}
